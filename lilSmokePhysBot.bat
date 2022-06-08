@@ -17,3 +17,9 @@ return
 :GOODLOGIN
 echo "welcome"
 pause
+echo "select an option"
+echo "1.Force (given mass and velocity)"
+echo "2.Mass ( given force and velocity)""
+echo "3.Velocity (given force and mass)"
+echo "4.
+set /p SELECTION = "SELECTION:"
