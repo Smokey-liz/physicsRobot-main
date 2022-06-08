@@ -18,8 +18,8 @@ return
 echo "welcome"
 pause
 echo "select an option"
-echo "1.Force (given mass and velocity)"
-echo "2.Mass ( given force and velocity)""
-echo "3.Velocity (given force and mass)"
-echo "4.
+echo "1.Force (given mass and acceleration)"
+echo "2.Mass ( given force and acceleration)"
+echo "3.acceleration (given force and mass)"
+echo "4."
 set /p SELECTION = "SELECTION:"
