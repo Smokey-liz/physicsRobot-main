@@ -35,10 +35,22 @@ if %SELECTION% = 1 GOTO :FORCE
 
 
 
-:Force
+:FORCEFMA
 echo "f=ma"
 set /p MASS = "m="
 set /p ACCEL = "a="
 echo "multiply m*a for f"
 set FORCE = %MASS% * %ACCEL%
 echo %FORCE%
+goto :GOODLOGIN
+
+:MASSFMA
+goto :GOODLOGIN
+
+:ACCELFMA
+goto :GOODLOGIN
+
+:GRAVFORCEFGMR
+goto :GOODLOGIN
+
+:MASSFGMR
