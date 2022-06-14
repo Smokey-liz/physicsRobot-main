@@ -30,12 +30,16 @@ echo "8.time (given acceleration, starting velocity, and final velocity)"
 echo "9.Average velocity( given time and acceleration)"
 echo "10."
 set /p SELECTION = "SELECTION:"
-if %SELECTION% = 1 GOTO :FORCE
+if %SELECTION% = 1 GOTO :FORCE_FMA
+if %SELECTION% = 2 GOTO :MASS_FMA
+if %SELECTION% = 3 GOTO :ACCEL_FMA
+if %SELECTION% = 4 GOTO :GRAVFORCE_FGMR
+if %SELECTION% = 5 GOTO :MASS_FGMR
 
 
 
 
-:FORCEFMA
+:FORCE_FMA
 echo "f=ma"
 set /p MASS = "m="
 set /p ACCEL = "a="
@@ -44,13 +48,26 @@ set FORCE = %MASS% * %ACCEL%
 echo %FORCE%
 goto :GOODLOGIN
 
-:MASSFMA
+:MASS_FMA
 goto :GOODLOGIN
 
-:ACCELFMA
+:ACCEL_FMA
 goto :GOODLOGIN
 
-:GRAVFORCEFGMR
+:GRAVFORCE_FGMR
 goto :GOODLOGIN
 
-:MASSFGMR
+:MASS_FGMR
+goto :GOODLOGIN
+
+:DIST_BET_CENT
+goto :GOODLOGIN
+
+:ACCEL_AVOVFT
+goto :GOODLOGIN
+
+:TIME_AVOVFT
+goto :GOODLOGIN
+
+:AVGVEL_AVOVFT
+goto :GOODLOGIN
